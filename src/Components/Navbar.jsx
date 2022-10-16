@@ -1,10 +1,9 @@
-import { ReactNode } from 'react';
+// import { ReactNode } from 'react';
 import {
 	Box,
 	Flex,
 	Avatar,
 	HStack,
-	Link,
 	IconButton,
 	Button,
 	Menu,
@@ -17,37 +16,37 @@ import {
 	Stack,
 	useColorMode,
 } from '@chakra-ui/react';
-import {
-	HamburgerIcon,
-	CloseIcon,
-	AddIcon,
-	MoonIcon,
-	SunIcon,
-} from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
-const Links = ['About', 'Skills', 'Experience', 'Projects'];
+const links = ['About', 'Skills', 'Experience', 'Projects'];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-	<Link
-		px={2}
-		py={1}
-		rounded={'md'}
-		_hover={{
-			textDecoration: 'none',
-			bg: useColorModeValue('gray.200', 'gray.700'),
-		}}
-		href={'#'}
-	>
-		{children}
-	</Link>
-);
+// const NavLink = ({ children }: { children: ReactNode }) => (
+// 	<Link
+// 		px={2}
+// 		py={1}
+// 		rounded={'md'}
+// 		_hover={{
+// 			textDecoration: 'none',
+// 			bg: useColorModeValue('gray.200', 'gray.700'),
+// 		}}
+// 		href={'#'}
+// 	>
+// 		{children}
+// 	</Link>
+// );
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Box bg={useColorModeValue('gray.100', 'gray.900')} px={10}>
+			<Box
+				bg={useColorModeValue('gray.100', 'gray.900')}
+				px={10}
+				pos='fixed'
+				w={'full'}
+			>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
 						size={'md'}
@@ -57,14 +56,26 @@ export default function Nav() {
 						onClick={isOpen ? onClose : onOpen}
 					/>
 					<HStack spacing={8} alignItems={'center'}>
-						<Box>Logo</Box>
+						<Box fontWeight={'bold'} fontSize='30px'>
+							Tarun
+						</Box>
 						<HStack
 							as={'nav'}
 							spacing={4}
 							display={{ base: 'none', md: 'flex' }}
 						>
-							{Links.map((link) => (
-								<NavLink key={link}>{link}</NavLink>
+							{links.map((link) => (
+								<Link
+									key={link}
+									activeClass='active'
+									to={link}
+									spy={true}
+									smooth={true}
+									offset={70}
+									duration={500}
+								>
+									{link}
+								</Link>
 							))}
 						</HStack>
 					</HStack>
@@ -77,10 +88,10 @@ export default function Nav() {
 								variant={'solid'}
 								colorScheme={'teal'}
 								size={'sm'}
+								borderRadius='20px'
 								mr={4}
-								leftIcon={<AddIcon />}
 							>
-								Action
+								Contact Me
 							</Button>
 
 							<Menu>
@@ -94,15 +105,15 @@ export default function Nav() {
 									<Avatar
 										size={'sm'}
 										src={
-											'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
+											'https://media-exp1.licdn.com/dms/image/C4E03AQF3THAIdQs4hA/profile-displayphoto-shrink_400_400/0/1593631237800?e=1671667200&v=beta&t=b4WLSL4VFxf6J5YoUwxEYXydIoQIZqANxASZPqjxDeI'
 										}
 									/>
 								</MenuButton>
 								<MenuList>
-									<MenuItem>Link 1</MenuItem>
-									<MenuItem>Link 2</MenuItem>
+									<MenuItem>My Resume</MenuItem>
+									<MenuItem>GitHub</MenuItem>
 									<MenuDivider />
-									<MenuItem>Link 3</MenuItem>
+									<MenuItem>LinkedIn</MenuItem>
 								</MenuList>
 							</Menu>
 						</Stack>
@@ -111,8 +122,8 @@ export default function Nav() {
 				{isOpen ? (
 					<Box pb={4} display={{ md: 'none' }}>
 						<Stack as={'nav'} spacing={4}>
-							{Links.map((link) => (
-								<NavLink key={link}>{link}</NavLink>
+							{links.map((link) => (
+								<Link key={link}>{link}</Link>
 							))}
 						</Stack>
 					</Box>

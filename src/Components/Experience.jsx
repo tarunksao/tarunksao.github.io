@@ -1,9 +1,9 @@
 import { Container, Heading } from '@chakra-ui/react';
 
-export default function About() {
+export default function Experience() {
 	return (
 		<Container maxW={'full'} p={10}>
-			<Heading>About</Heading>
+			<Heading>Experience</Heading>
 		</Container>
 	);
 }
