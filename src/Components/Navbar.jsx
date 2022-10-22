@@ -15,26 +15,12 @@ import {
 	useColorModeValue,
 	Stack,
 	useColorMode,
+	Text,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const links = ['About', 'Skills', 'Experience', 'Projects'];
-
-// const NavLink = ({ children }: { children: ReactNode }) => (
-// 	<Link
-// 		px={2}
-// 		py={1}
-// 		rounded={'md'}
-// 		_hover={{
-// 			textDecoration: 'none',
-// 			bg: useColorModeValue('gray.200', 'gray.700'),
-// 		}}
-// 		href={'#'}
-// 	>
-// 		{children}
-// 	</Link>
-// );
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -43,7 +29,7 @@ export default function Nav() {
 		<>
 			<Box
 				bg={useColorModeValue('gray.100', 'gray.900')}
-				px={10}
+				px={{ base: 6, lg: 10 }}
 				pos='fixed'
 				w={'full'}
 			>
@@ -56,9 +42,17 @@ export default function Nav() {
 						onClick={isOpen ? onClose : onOpen}
 					/>
 					<HStack spacing={8} alignItems={'center'}>
-						<Box fontWeight={'bold'} fontSize='30px'>
-							Tarun
-						</Box>
+						<Link
+							to='Home'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+						>
+							<Text fontWeight={'bold'} fontSize='25px'>
+								Tarun
+							</Text>
+						</Link>
 						<HStack
 							as={'nav'}
 							spacing={4}
@@ -67,11 +61,10 @@ export default function Nav() {
 							{links.map((link) => (
 								<Link
 									key={link}
-									activeClass='active'
-									to={link}
+									to={`${link}`}
 									spy={true}
 									smooth={true}
-									offset={70}
+									offset={-100}
 									duration={500}
 								>
 									{link}
@@ -90,6 +83,7 @@ export default function Nav() {
 								size={'sm'}
 								borderRadius='20px'
 								mr={4}
+								display={{ base: 'none', md: 'flex' }}
 							>
 								Contact Me
 							</Button>
@@ -123,7 +117,16 @@ export default function Nav() {
 					<Box pb={4} display={{ md: 'none' }}>
 						<Stack as={'nav'} spacing={4}>
 							{links.map((link) => (
-								<Link key={link}>{link}</Link>
+								<Link
+									key={link}
+									to={`${link}`}
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={500}
+								>
+									{link}
+								</Link>
 							))}
 						</Stack>
 					</Box>
