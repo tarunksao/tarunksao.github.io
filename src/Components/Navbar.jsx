@@ -16,11 +16,12 @@ import {
 	Stack,
 	useColorMode,
 	Text,
+	Link as RefLink,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-const links = ['About', 'Skills', 'Experience', 'Projects'];
+const links = ['About', 'Skills', 'Experience', 'Projects', 'GitHub Stats'];
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -77,16 +78,24 @@ export default function Nav() {
 							<Button onClick={toggleColorMode}>
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
-							<Button
-								variant={'solid'}
-								colorScheme={'teal'}
-								size={'sm'}
-								borderRadius='20px'
-								mr={4}
-								display={{ base: 'none', md: 'flex' }}
+							<Link
+								to={`Contact`}
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={500}
 							>
-								Contact Me
-							</Button>
+								<Button
+									variant={'solid'}
+									colorScheme={'teal'}
+									size={'sm'}
+									borderRadius='20px'
+									mr={4}
+									display={{ base: 'none', md: 'flex' }}
+								>
+									Contact Me
+								</Button>
+							</Link>
 
 							<Menu>
 								<MenuButton
@@ -104,10 +113,34 @@ export default function Nav() {
 									/>
 								</MenuButton>
 								<MenuList>
-									<MenuItem>My Resume</MenuItem>
-									<MenuItem>GitHub</MenuItem>
+									<MenuItem>
+										<RefLink
+											_hover={{ textDecoration: 'none' }}
+											target='_blank'
+											href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+										>
+											My Resume
+										</RefLink>
+									</MenuItem>
+									<MenuItem>
+										<RefLink
+											_hover={{ textDecoration: 'none' }}
+											target='_blank'
+											href='https://github.com/tarunksao'
+										>
+											GitHub
+										</RefLink>
+									</MenuItem>
 									<MenuDivider />
-									<MenuItem>LinkedIn</MenuItem>
+									<MenuItem>
+										<RefLink
+											_hover={{ textDecoration: 'none' }}
+											target='_blank'
+											href='https://www.linkedin.com/in/tarun-kumar-sao-3289181a5/'
+										>
+											LinkedIn
+										</RefLink>
+									</MenuItem>
 								</MenuList>
 							</Menu>
 						</Stack>

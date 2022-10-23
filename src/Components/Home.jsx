@@ -1,10 +1,12 @@
 import {
 	Box,
+	Button,
 	Container,
 	Flex,
 	Heading,
 	Icon,
 	Image,
+	Link,
 	Text,
 } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
@@ -41,6 +43,20 @@ export default function Home() {
 						learn and make use of new skillsets, with a mind set of try and fail
 						again and again till you suceed.
 					</Text>
+					<Button
+						variant={'solid'}
+						colorScheme='blue'
+						mt={4}
+						borderRadius={'full'}
+					>
+						<Link
+							_hover={{ textDecoration: 'none' }}
+							target='_blank'
+							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+						>
+							Resume
+						</Link>
+					</Button>
 					{/* <Flex>
 							<FaGithub />
 						</Flex> */}
