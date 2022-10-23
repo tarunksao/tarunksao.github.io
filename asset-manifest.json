@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.62aeceac.js",
+    "main.js": "/static/js/main.c546db35.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/SSENSE_APP.png": "/static/media/SSENSE_APP.575603023aa2964cf659.png",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.62aeceac.js.map": "/static/js/main.62aeceac.js.map",
+    "main.c546db35.js.map": "/static/js/main.c546db35.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.62aeceac.js"
+    "static/js/main.c546db35.js"
   ]
 }
