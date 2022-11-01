@@ -9,7 +9,7 @@ import {
 	Link,
 	Text,
 } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Home() {
 	return (
@@ -43,20 +43,39 @@ export default function Home() {
 						learn and make use of new skillsets, with a mind set of try and fail
 						again and again till you suceed.
 					</Text>
-					<Button
-						variant={'solid'}
-						colorScheme='blue'
-						mt={4}
-						borderRadius={'full'}
-					>
-						<Link
-							_hover={{ textDecoration: 'none' }}
-							target='_blank'
-							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+					<Flex gap={2}>
+						<Button
+							variant={'solid'}
+							colorScheme='blue'
+							mt={4}
+							borderRadius={'full'}
 						>
-							Resume
-						</Link>
-					</Button>
+							<Link
+								_hover={{ textDecoration: 'none' }}
+								target='_blank'
+								href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+							>
+								My Resume
+							</Link>
+						</Button>
+						<Box mt={4}>
+							<Link
+								_hover={{ textDecoration: 'none' }}
+								target='_blank'
+								href='https://github.com/tarunksao'
+							>
+								<Icon as={FaGithub} w={10} h={10} />
+							</Link>
+						</Box>
+						<Box mt={4}>
+							<Link
+								target='_blank'
+								href='https://www.linkedin.com/in/tarun-kumar-sao-3289181a5/'
+							>
+								<Icon as={FaLinkedin} w={10} h={10} color='blue.600' />
+							</Link>
+						</Box>
+					</Flex>
 					{/* <Flex>
 							<FaGithub />
 						</Flex> */}

@@ -33,6 +33,7 @@ export default function Nav() {
 				px={{ base: 6, lg: 10 }}
 				pos='fixed'
 				w={'full'}
+				zIndex='100'
 			>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
