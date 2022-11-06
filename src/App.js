@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import './App.css';
 import About from './Components/About';
 import Contact from './Components/Contact';

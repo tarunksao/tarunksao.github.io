@@ -7,7 +7,6 @@ import {
 	Icon,
 	Image,
 	Link,
-	Text,
 } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -18,6 +17,7 @@ export default function Home() {
 			px={{ base: 10, md: 10, lg: 10 }}
 			pt={24}
 			id='Home'
+			minH={'700px'}
 		>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}
@@ -27,13 +27,29 @@ export default function Home() {
 			>
 				<Box>
 					<Heading
-						fontSize={{ base: '30px', md: '40px', lg: '50px' }}
-						mt={{ base: '0', md: '55px', lg: '80px' }}
+						fontSize={{ base: '20px', md: '25px', lg: '30px' }}
+						mt={{ base: '0', md: '40px', lg: '60px' }}
+						mb={1}
 						color={'blue.500'}
 					>
-						Hi, I am Tarun Kumar Sao
+						Hi !!!!!,
 					</Heading>
-					<Text
+					<Flex alignItems={'end'} gap={4}>
+						<Heading
+							fontSize={{ base: '20px', md: '25px', lg: '30px' }}
+							mb={1}
+							color={'blue.500'}
+						>
+							I am
+						</Heading>
+						<Heading
+							fontSize={{ base: '30px', md: '40px', lg: '50px' }}
+							color={'blue.500'}
+						>
+							Tarun Kumar Sao
+						</Heading>
+					</Flex>
+					{/* <Text
 						fontSize={{ base: '14px', md: '16px', lg: '20px' }}
 						mt={{ base: '10px', md: '25px', lg: '40px' }}
 						w={{ base: '250px', md: '350px', lg: '500px' }}
@@ -42,8 +58,8 @@ export default function Home() {
 						skills in order to create or rework on applications, alwyas ready to
 						learn and make use of new skillsets, with a mind set of try and fail
 						again and again till you suceed.
-					</Text>
-					<Flex gap={2}>
+					</Text> */}
+					<Flex gap={2} mt={6}>
 						<Button
 							variant={'solid'}
 							colorScheme='blue'
