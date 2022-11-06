@@ -65,48 +65,51 @@ export default function Cards(props) {
 					alignItems={'center'}
 					w={'full'}
 				>
-					<Button
-						w={{ sm: 10, md: 16, lg: 24 }}
-						flex={1}
-						fontSize={{ md: 'sm', lg: 'md' }}
-						rounded={'full'}
-						bg={'blue.500'}
-						color='white'
-						_focus={{
-							bg: 'gray.700',
-						}}
+					<Link
+						_hover={{ textDecoration: 'none' }}
+						target='_blank'
+						href={netlify}
 					>
-						<Link
-							_hover={{ textDecoration: 'none' }}
-							target='_blank'
-							href={netlify}
+						<Button
+							w={{ sm: 10, md: 16, lg: 24 }}
+							flex={1}
+							fontSize={{ md: 'sm', lg: 'md' }}
+							rounded={'full'}
+							bg={'blue.500'}
+							color='white'
+							_hover={{
+								bg: 'blue.200',
+							}}
+							_focus={{
+								bg: 'blue.700',
+							}}
 						>
 							Website
-						</Link>
-					</Button>
-					<Button
-						w={{ sm: 10, md: 16, lg: 24 }}
-						flex={1}
-						fontSize={{ md: 'sm', lg: 'md' }}
-						rounded={'full'}
-						bg={'blackAlpha.900'}
-						color={'white'}
-						boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%)'}
-						_hover={{
-							bg: 'blackAlpha.700',
-						}}
-						_focus={{
-							bg: 'blackAlpha.400',
-						}}
+						</Button>
+					</Link>
+					<Link
+						_hover={{ textDecoration: 'none' }}
+						target='_blank'
+						href={github}
 					>
-						<Link
-							_hover={{ textDecoration: 'none' }}
-							target='_blank'
-							href={github}
+						<Button
+							w={{ sm: 10, md: 16, lg: 24 }}
+							flex={1}
+							fontSize={{ md: 'sm', lg: 'md' }}
+							rounded={'full'}
+							bg={'blackAlpha.900'}
+							color={'white'}
+							boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%)'}
+							_hover={{
+								bg: 'blackAlpha.700',
+							}}
+							_focus={{
+								bg: 'blackAlpha.400',
+							}}
 						>
 							GitHub
-						</Link>
-					</Button>
+						</Button>
+					</Link>
 				</Flex>
 			</Flex>
 		</Flex>

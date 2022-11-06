@@ -60,20 +60,20 @@ export default function Home() {
 						again and again till you suceed.
 					</Text> */}
 					<Flex gap={2} mt={6}>
-						<Button
-							variant={'solid'}
-							colorScheme='blue'
-							mt={4}
-							borderRadius={'full'}
+						<Link
+							_hover={{ textDecoration: 'none' }}
+							target='_blank'
+							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
 						>
-							<Link
-								_hover={{ textDecoration: 'none' }}
-								target='_blank'
-								href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+							<Button
+								variant={'solid'}
+								colorScheme='blue'
+								mt={4}
+								borderRadius={'full'}
 							>
 								My Resume
-							</Link>
-						</Button>
+							</Button>
+						</Link>
 						<Box mt={4}>
 							<Link
 								_hover={{ textDecoration: 'none' }}
