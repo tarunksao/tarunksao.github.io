@@ -41,7 +41,7 @@ export default function Experience() {
 				</Text>
 				<UnorderedList
 					display={'flex'}
-					direction={{ sm: 'column', lg: 'row' }}
+					flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
 					gap={4}
 				>
 					<ListItem>

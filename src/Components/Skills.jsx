@@ -95,7 +95,7 @@ export default function Skills() {
 	return (
 		<Container maxW={'7xl'} p={10} id='Skills' minH={'700px'}>
 			<Heading color={'blue.500'}>Skills</Heading>
-			<SimpleGrid columns={{ sm: 2, md: 3, lg: 4 }} gap={4} mt={20}>
+			<SimpleGrid columns={{ base: 2, md: 3, lg: 4 }} gap={4} mt={20}>
 				{images.map((el) => (
 					<Box key={el.id} m='auto'>
 						<Image src={el.image} alt={el.name} w={'150px'} h={'150px'} />

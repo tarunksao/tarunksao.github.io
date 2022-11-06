@@ -18,7 +18,7 @@ export default function GitHub_Stats() {
 			/>
 			<Flex
 				justifyContent='space-evenly'
-				flexDirection={{ sm: 'column', lg: 'row' }}
+				flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
 			>
 				<Box m='auto' mt={10}>
 					<Image

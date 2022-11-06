@@ -6,7 +6,11 @@ export default function Contact() {
 		<>
 			<Container maxW={'7xl'} p={10} id='Contact' minH={'400px'}>
 				<Heading color={'blue.500'}>Contact Me</Heading>
-				<Flex gap={10} mt={10}>
+				<Flex
+					gap={10}
+					mt={10}
+					direction={{ base: 'column', md: 'column', lg: 'row' }}
+				>
 					<Text>
 						<Icon as={FaPhone} mr={2} color='green.300' fontSize='20px' /> +91
 						9630529348
