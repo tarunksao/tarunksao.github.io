@@ -21,11 +21,27 @@ import {
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-const links = ['About', 'Skills', 'Experience', 'Projects', 'GitHub Stats'];
+const links = ['About', 'Skills', 'Experience', 'Projects', 'GitHub Stats', 'Contact'];
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	
+	const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('Tarun_Sao_Resume-fw20_1259.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Tarun_Sao_Resume-fw20_1259.pdf';
+                alink.click();
+            })
+        })
+    }
+
 	return (
 		<>
 			<Box
@@ -79,25 +95,20 @@ export default function Nav() {
 							<Button onClick={toggleColorMode}>
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
-							<Link
-								to={`Contact`}
-								spy={true}
-								smooth={true}
-								offset={-100}
-								duration={500}
-							>
-								<Button
-									variant={'solid'}
-									colorScheme={'teal'}
-									size={'sm'}
-									borderRadius='20px'
-									mr={4}
-									display={{ base: 'none', md: 'flex' }}
+						<Link
+							_hover={{ textDecoration: 'none' }}
+							target='_blank'
+							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
+						>
+							<Button
+								variant={'solid'}
+								colorScheme='teal'
+								borderRadius={'full'}
+								onClick={onButtonClick}
 								>
-									Contact Me
-								</Button>
-							</Link>
-
+								My Resume
+							</Button>
+						</Link>
 							<Menu>
 								<MenuButton
 									as={Button}

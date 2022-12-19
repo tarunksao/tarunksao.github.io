@@ -11,6 +11,21 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Home() {
+	const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('Tarun_Sao_Resume-fw20_1259.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Tarun_Sao_Resume-fw20_1259.pdf';
+                alink.click();
+            })
+        })
+    }
+
 	return (
 		<Container
 			maxW={'full'}
@@ -70,7 +85,8 @@ export default function Home() {
 								colorScheme='blue'
 								mt={4}
 								borderRadius={'full'}
-							>
+								onClick={onButtonClick}
+								>
 								My Resume
 							</Button>
 						</Link>

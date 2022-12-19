@@ -9,7 +9,7 @@ export const TechStackTags = (arr) => {
 						key={el}
 						variant='solid'
 						colorScheme='blue'
-						size={{ base: 'sm', md: 'md' }}
+						size={{ base: 'xs', md: 'sm' }}
 					>
 						{el}
 					</Tag>

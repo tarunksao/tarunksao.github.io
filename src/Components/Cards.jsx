@@ -18,7 +18,7 @@ export default function Cards(props) {
 			borderRadius='lg'
 			m='auto'
 			w={{ sm: '400px', md: '400px', lg: 'full' }}
-			height={'700px'}
+			height={'800px'}
 			direction='column'
 			bg={useColorModeValue('white', 'gray.900')}
 			boxShadow={'2xl'}
@@ -116,8 +116,7 @@ export default function Cards(props) {
 	);
 }
 
-{
-	/* <Box zIndex='1' width='100%' position='absolute' height='100%'>
+/* <Box zIndex='1' width='100%' position='absolute' height='100%'>
         <Box
             bgGradient={useColorModeValue(
                 'radial(orange.600 1px, transparent 1px)',
@@ -128,4 +127,3 @@ export default function Cards(props) {
             height='100%'
         />
     </Box> */
-}

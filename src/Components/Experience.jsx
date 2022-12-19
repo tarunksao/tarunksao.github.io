@@ -14,7 +14,7 @@ export default function Experience() {
 			<Heading color={'blue.500'}>Experience</Heading>
 			<VStack mt={10} gap={2}>
 				<Flex
-					direction={{ sm: 'column', lg: 'row' }}
+					direction={{base:'column', sm: 'column', lg: 'row' }}
 					mb={4}
 					alignItems='flex-start'
 					justifyContent='space-between'
