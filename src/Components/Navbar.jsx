@@ -18,10 +18,10 @@ import {
 	Text,
 	Link as RefLink,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from '@chakra-ui/icons';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-const links = ['About', 'Skills', 'Experience', 'Projects', 'GitHub Stats', 'Contact'];
+const links = ['About Me', 'Skills', 'Experience', 'Projects', 'GitHub Stats', 'Contact Me'];
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -120,9 +120,10 @@ export default function Nav() {
 									<Avatar
 										size={'sm'}
 										src={
-											'https://media-exp1.licdn.com/dms/image/C4E03AQF3THAIdQs4hA/profile-displayphoto-shrink_400_400/0/1593631237800?e=1671667200&v=beta&t=b4WLSL4VFxf6J5YoUwxEYXydIoQIZqANxASZPqjxDeI'
+											'https://avatars.githubusercontent.com/u/107460801?v=4'
 										}
 									/>
+									<ChevronDownIcon />
 								</MenuButton>
 								<MenuList>
 									<MenuItem>

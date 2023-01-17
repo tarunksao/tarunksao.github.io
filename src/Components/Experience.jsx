@@ -32,7 +32,7 @@ export default function Experience() {
 							Manufacturing, Fabrication & Erection.
 						</Text>
 						<Text>
-							<strong>Location: -</strong> Siltara, Raipur, Chhattsgarh
+							<strong>Location: -</strong> Siltara, Raipur, Chhattisgarh
 						</Text>
 					</VStack>
 				</Flex>

@@ -5,7 +5,7 @@ export default function GitHub_Stats() {
 	return (
 		<Container maxW={'7xl'} p={10} id='GitHub Stats' minH={'700px'}>
 			<Heading fontSize='30px' mb={10} color={'blue.500'}>
-				GitHub Stats
+				GitHub Calendar
 			</Heading>
 			<GitHubCalendar
 				username='tarunksao'
