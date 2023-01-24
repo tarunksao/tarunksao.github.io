@@ -10,20 +10,27 @@ import {
 
 export default function Experience() {
 	return (
-		<Container maxW={'7xl'} py={10} id='Experience' minH={'700px'}>
+		<Container maxW={'7xl'} mx={{base:3, lg:'auto'}} py={10} id='Experience'>
 			<Heading color={'blue.500'}>Experience</Heading>
-			<VStack mt={10} gap={2}>
+			<Flex 
+				direction={{base:'column', sm: 'column', lg: 'row' }} 
+				mt={10} 
+				gap={{base:4, lg:40}}
+				alignItems='flex-start'
+				justifyContent='center'
+				>
 				<Flex
-					direction={{base:'column', sm: 'column', lg: 'row' }}
+					direction='column'
 					mb={4}
 					alignItems='flex-start'
 					justifyContent='space-between'
 					gap={10}
+					w={{base:'350px', sm:'500px'}}
 				>
 					<Heading color={'blue.500'} fontSize='3xl'>
 						Quality Engineer (QA/QC)
 					</Heading>
-					<VStack alignItems={'flex-start'}>
+					<VStack alignItems={'flex-start'} gap={2} ml={4}>
 						<Text>
 							<strong>Company: -</strong> K. P. & Grandsons
 						</Text>
@@ -36,31 +43,29 @@ export default function Experience() {
 						</Text>
 					</VStack>
 				</Flex>
-				<Text fontWeight={'bold'} alignSelf={'flex-start'}>
-					Roles & Responsibilities: -
-				</Text>
-				<UnorderedList
-					display={'flex'}
-					flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
-					gap={4}
-				>
-					<ListItem>
-						Estimation of raw materials required for the project.
-					</ListItem>
-					<ListItem>
-						Drafting pressure parts of the Boiler using AutoCAD.
-					</ListItem>
-					<ListItem>
-						Ensuring product quality as per the droughted design.
-					</ListItem>
-					<ListItem>
-						Documentation for Quality Check & IBR certifications.
-					</ListItem>
-					<ListItem>
-						Maintaining records of machine calibration & maintenance.
-					</ListItem>
-				</UnorderedList>
-			</VStack>
+				<VStack gap={4} ml={8}>
+					<Text fontWeight={'bold'} alignSelf={'flex-start'} ml={-8}>
+						Roles & Responsibilities: -
+					</Text>
+					<UnorderedList display='flex' flexDir='column' gap={4} w={{base:'300px', sm:'500px'}}>
+						<ListItem>
+							Estimation of raw materials required for the project.
+						</ListItem>
+						<ListItem>
+							Drafting pressure parts of the Boiler using AutoCAD.
+						</ListItem>
+						<ListItem>
+							Ensuring product quality as per the droughted design.
+						</ListItem>
+						<ListItem>
+							Documentation for Quality Check & IBR certifications.
+						</ListItem>
+						<ListItem>
+							Maintaining records of machine calibration & maintenance.
+						</ListItem>
+					</UnorderedList>
+				</VStack>
+			</Flex>
 		</Container>
 	);
 }

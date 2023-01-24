@@ -36,20 +36,20 @@ export const ProjectData = [
 		desc: 'A cloud-based platform that allows users to create their own applications and project management software.',
 		netlify: 'https://spontaneous-kitsune-f52a3c.netlify.app/',
 		github: 'https://github.com/tarunksao/-uneven-taste-145',
-		techStack: ['ReactJS', 'REST-API', 'Chakra-UI', 'Axios', 'Routing'],
+		techStack: ['HTML', 'CSS', 'JavaScript', 'Local Storage', 'DOM'],
 		workType: ['Individual', 'E-Commerce'],
 		image:
 			'https://i.postimg.cc/D0Xz5ykh/spontaneous-kitsune-f52a3c-netlify-app.png',
 	},
-	{
-		id: 5,
-		name: 'Youtube Mini',
-		desc: 'A clone of YouTube, the famous video streaming platform.',
-		netlify: 'https://lively-lily-685cc6.netlify.app/',
-		github: 'https://github.com/tarunksao/youtube-mini',
-		techStack: ['HTML', 'CSS', 'JavaScript', 'DOM', 'REST API'],
-		workType: ['Individual', 'Video Streaming'],
-		image:
-			'https://i.postimg.cc/CKwxr6RZ/127-0-0-1-5500-youtube-mini-index-html.png',
-	},
+	// {
+	// 	id: 5,
+	// 	name: 'Youtube Mini',
+	// 	desc: 'A clone of YouTube, the famous video streaming platform.',
+	// 	netlify: 'https://lively-lily-685cc6.netlify.app/',
+	// 	github: 'https://github.com/tarunksao/youtube-mini',
+	// 	techStack: ['HTML', 'CSS', 'JavaScript', 'DOM', 'REST API'],
+	// 	workType: ['Individual', 'Video Streaming'],
+	// 	image:
+	// 		'https://i.postimg.cc/CKwxr6RZ/127-0-0-1-5500-youtube-mini-index-html.png',
+	// },
 ];

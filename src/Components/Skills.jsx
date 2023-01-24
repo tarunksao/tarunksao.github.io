@@ -93,13 +93,13 @@ const images = [
 
 export default function Skills() {
 	return (
-		<Container maxW={'7xl'} p={10} id='Skills' minH={'700px'}>
+		<Container maxW={'7xl'} mx={{base:3, lg:'auto'}} p={{base:4, lg:10}} id='Skills'>
 			<Heading color={'blue.500'}>Skills</Heading>
 			<SimpleGrid columns={{ base: 2, md: 3, lg: 4 }} gap={4} mt={20}>
 				{images.map((el) => (
 					<Box key={el.id} m='auto'>
-						<Image src={el.image} alt={el.name} w={'150px'} h={'150px'} />
-						<Text align={'center'} mt={4}>
+						<Image src={el.image} alt={el.name} w={{base:'80px',lg:'150px'}} h={{base:'80px',lg:'150px'}} />
+						<Text align={'center'} my={4}>
 							{el.name}
 						</Text>
 					</Box>

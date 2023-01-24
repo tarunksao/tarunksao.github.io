@@ -29,10 +29,9 @@ export default function Home() {
 	return (
 		<Container
 			maxW={'full'}
-			px={{ base: 10, md: 10, lg: 10 }}
+			mx={3}
 			pt={24}
 			id='Home'
-			minH={'700px'}
 		>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}

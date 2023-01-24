@@ -9,7 +9,6 @@ export default function Projects() {
 				maxW={'7xl'}
 				py={10}
 				id='Projects'
-				minH={'700px'}
 				mb={10}
 				maxH='auto'
 			>

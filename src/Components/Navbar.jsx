@@ -19,7 +19,7 @@ import {
 	Link as RefLink,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from '@chakra-ui/icons';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const links = ['About Me', 'Skills', 'Experience', 'Projects', 'GitHub Stats', 'Contact Me'];
 
@@ -46,7 +46,7 @@ export default function Nav() {
 		<>
 			<Box
 				bg={useColorModeValue('gray.100', 'gray.900')}
-				px={{ base: 6, lg: 10 }}
+				px={{ base: 4, lg: 10 }}
 				pos='fixed'
 				w={'full'}
 				zIndex='100'
@@ -67,7 +67,7 @@ export default function Nav() {
 							offset={-100}
 							duration={500}
 						>
-							<Text fontWeight={'bold'} fontSize='25px'>
+							<Text cursor='pointer' fontWeight={'bold'} fontSize='25px' color='blue.500'>
 								Tarun
 							</Text>
 						</Link>
@@ -75,6 +75,7 @@ export default function Nav() {
 							as={'nav'}
 							spacing={4}
 							display={{ base: 'none', md: 'flex' }}
+							alignItems='center'
 						>
 							{links.map((link) => (
 								<Link
@@ -85,13 +86,15 @@ export default function Nav() {
 									offset={-100}
 									duration={500}
 								>
-									{link}
+									<Text cursor='pointer' fontWeight='semibold'>
+										{link}
+									</Text>
 								</Link>
 							))}
 						</HStack>
 					</HStack>
 					<Flex alignItems={'center'}>
-						<Stack direction={'row'} spacing={7}>
+						<Stack direction={'row'} spacing={4}>
 							<Button onClick={toggleColorMode}>
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
@@ -105,6 +108,7 @@ export default function Nav() {
 								colorScheme='teal'
 								borderRadius={'full'}
 								onClick={onButtonClick}
+								fontSize={{base:'10px', lg:'16px'}}
 								>
 								My Resume
 							</Button>
