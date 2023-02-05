@@ -17,10 +17,10 @@ export default function About() {
 						w={{ base: '250px', md: '350px', lg: '500px' }}
 						textAlign='justify'
 					>
-						An Aspiring Full Stack Web Developer, looking forward to utilize my
-						skills in order to create or rework on applications, alwyas ready to
-						learn and make use of new skillsets, with a mind set of try and fail
-						again and again till you suceed.
+						An Aspiring Full Stack Web Developer, looking forward to utilizing my 
+						skills in order to create or rework applications, always ready to learn 
+						and make use of new skill sets, with a mindset of trying and failing 
+						again and again till I succeed.
 					</Text>
 				</Box>
 				<Box>

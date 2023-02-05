@@ -2,7 +2,7 @@ export const ProjectData = [
 	{
 		id: 1,
 		name: 'Rentify.com',
-		desc: 'A clone of Rentomojo, an online rental platform that provides furniture, appliances and electronics (mobiles, laptops) on a monthly rental basis.',
+		desc: 'A clone of Rentomojo, an online rental platform that provides furniture, appliances, and electronics (mobiles, laptops) on a monthly rental basis.',
 		netlify: 'https://rentify-one.vercel.app/',
 		github: 'https://github.com/khadsepranay/Rentify.com',
 		techStack: ['ReactJS', 'Redux', 'Redux-Thunk', 'Material-UI', 'NodeJS', 'REST-API', 'Chakra-UI', 'Axios', 'Routing'],
@@ -12,7 +12,7 @@ export const ProjectData = [
 	{
 		id: 2,
 		name: 'SSENSE Clone',
-		desc: 'A multi-brand retailer based in Montreal, Canada specializing in the sale of designer fashion and high end streetwear.',
+		desc: 'A multi-brand retailer based in Montreal, Canada, specializes in the sale of designer fashion and high end streetwear.',
 		netlify: 'https://ssense-clone-app.netlify.app/',
 		github: 'https://github.com/tarunksao/dandy-religion-8340',
 		techStack: ['ReactJS', 'REST-API', 'Chakra-UI', 'Axios', 'Routing'],
@@ -33,7 +33,7 @@ export const ProjectData = [
 	{
 		id: 4,
 		name: 'Monday.com Clone',
-		desc: 'A cloud-based platform that allows users to create their own applications and project management software.',
+		desc: 'A cloud-based platform that allows users to create their applications and project management software.',
 		netlify: 'https://spontaneous-kitsune-f52a3c.netlify.app/',
 		github: 'https://github.com/tarunksao/-uneven-taste-145',
 		techStack: ['HTML', 'CSS', 'JavaScript', 'Local Storage', 'DOM'],

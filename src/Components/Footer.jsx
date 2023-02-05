@@ -13,7 +13,7 @@ export default function Footer() {
 				offset={-100}
 				duration={500}
 			    >
-                    <Text textAlign='center' fontWeight={'bold'} color='blue.500' mb={2}>We have reached the bottom</Text>
+                    <Text textAlign='center' fontWeight={'bold'} color='blue.500' mb={2}>We have reached the bottom.</Text>
 			        <Button cursor='pointer' fontWeight={'bold'} colorScheme='teal' borderRadius={'full'} variant={'solid'} textAlign='center'>
 						Back To Top <ChevronUpIcon ml={2} />
 					</Button>
