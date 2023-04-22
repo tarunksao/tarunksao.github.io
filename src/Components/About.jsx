@@ -2,7 +2,7 @@ import { Box, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 export default function About() {
 	return (
-		<Container maxW={'7xl'} p={10} id='about'>
+		<Container maxW={'7xl'} p={10} id='About Me'>
 			<Heading color={'blue.500'}>About Me</Heading>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}
@@ -12,7 +12,6 @@ export default function About() {
 			>
 				<Box>
 					<Text
-						id='user-detail-intro'
 						fontSize={{ base: '14px', md: '16px', lg: '20px' }}
 						mt={{ base: '10px', md: '25px', lg: '40px' }}
 						w={{ base: '250px', md: '350px', lg: '500px' }}

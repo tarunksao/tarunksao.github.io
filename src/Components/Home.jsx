@@ -31,7 +31,7 @@ export default function Home() {
 			maxW={'full'}
 			mx={3}
 			pt={24}
-			id='home'
+			id='Home'
 		>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}
@@ -57,7 +57,6 @@ export default function Home() {
 							I am
 						</Heading>
 						<Heading
-							id='user-detail-name'
 							fontSize={{ base: '30px', md: '40px', lg: '50px' }}
 							color={'blue.500'}
 						>
@@ -81,7 +80,6 @@ export default function Home() {
 							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
 						>
 							<Button
-								id="resume-button-2"
 								variant={'solid'}
 								colorScheme='blue'
 								mt={4}
@@ -119,7 +117,6 @@ export default function Home() {
 						alt='myImage'
 						borderRadius={'full'}
 						w={{ base: '150px', md: '250px', lg: '400px' }}
-						class="home-img"
 					/>
 				</Box>
 			</Flex>

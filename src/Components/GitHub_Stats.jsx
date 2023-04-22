@@ -3,7 +3,7 @@ import GitHubCalendar from 'react-github-calendar';
 
 export default function GitHubStats() {
 	return (
-		<Container maxW={'7xl'} p={10} id='github'>
+		<Container maxW={'7xl'} p={10} id='GitHub Stats'>
 			<Heading fontSize='30px' mb={10} color={'blue.500'}>
 				GitHub Calendar
 			</Heading>
@@ -20,14 +20,14 @@ export default function GitHubStats() {
 				justifyContent='space-evenly'
 				flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
 			>
-				<Box id="github-stats-card" m='auto' mt={10}>
+				<Box m='auto' mt={10}>
 					<Image
 						src='https://github-readme-stats.vercel.app/api?username=tarunksao&show_icons=true&locale=en'
 						alt='tarunksao'
 					/>
 				</Box>
 
-				<Box id="github-streak-stats" m='auto' mt={10}>
+				<Box m='auto' mt={10}>
 					<Image
 						src='https://github-readme-streak-stats.herokuapp.com/?user=tarunksao&'
 						alt='tarunksao'

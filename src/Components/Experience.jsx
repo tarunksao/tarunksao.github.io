@@ -10,7 +10,7 @@ import {
 
 export default function Experience() {
 	return (
-		<Container maxW={'7xl'} mx={{base:3, lg:'auto'}} py={10} id='experience'>
+		<Container maxW={'7xl'} mx={{base:3, lg:'auto'}} py={10} id='Experience'>
 			<Heading color={'blue.500'}>Experience</Heading>
 			<Flex 
 				direction={{base:'column', sm: 'column', lg: 'row' }} 
