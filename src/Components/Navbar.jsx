@@ -115,6 +115,7 @@ export default function Nav() {
 							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
 						>
 							<Button
+								id="resume-button-1"
 								variant={'solid'}
 								colorScheme='teal'
 								borderRadius={'full'}

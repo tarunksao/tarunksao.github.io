@@ -14,6 +14,7 @@ export default function Cards(props) {
 
 	return (
 		<Flex
+			class="project-card"
 			borderWidth='1px'
 			borderRadius='lg'
 			m='auto'
@@ -41,6 +42,7 @@ export default function Cards(props) {
 				<WorkTypeTags arr={workType} />
 				<TechStackTags arr={techStack} />
 				<Heading
+					class="project-title"
 					fontSize={{ sm: 'lg', md: 'xl', lg: '2xl' }}
 					fontFamily={'body'}
 					mt={2}
@@ -48,6 +50,7 @@ export default function Cards(props) {
 					{name}
 				</Heading>
 				<Text
+					class="project-description"
 					textAlign={'justify'}
 					color={useColorModeValue('gray.700', 'gray.400')}
 					mt={2}
@@ -66,6 +69,7 @@ export default function Cards(props) {
 					w={'full'}
 				>
 					<Link
+						class="project-deployed-link"
 						_hover={{ textDecoration: 'none' }}
 						target='_blank'
 						href={netlify}
@@ -88,6 +92,7 @@ export default function Cards(props) {
 						</Button>
 					</Link>
 					<Link
+						class="project-github-link"
 						_hover={{ textDecoration: 'none' }}
 						target='_blank'
 						href={github}

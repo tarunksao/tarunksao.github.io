@@ -11,15 +11,15 @@ export default function Contact() {
 					mt={10}
 					direction={{ base: 'column', md: 'column', lg: 'row' }}
 				>
-					<Text>
+					<Text id='contact-phone'>
 						<Icon as={FaPhone} mr={2} color='green.300' fontSize='20px' /> +91
 						9630529348
 					</Text>
-					<Text>
+					<Text id='contact-email'>
 						<Icon as={FaEnvelope} mr={2} color='red.400' fontSize='20px' />{' '}
 						tarun.k.sao@gmail.com
 					</Text>
-					<Text>
+					<Text id="contact-linkedin">
 						<Icon as={FaLinkedin} mr={2} color='blue.500' fontSize='20px' />{' '}
 						<Link
 							_hover={{ textDecoration: 'none' }}
@@ -29,7 +29,7 @@ export default function Contact() {
 							LinkedIn
 						</Link>
 					</Text>
-					<Text>
+					<Text id="contact-github">
 						<Icon as={FaGithub} mr={2} color='blackAlpha.800' fontSize='20px' />{' '}
 						<Link
 							_hover={{ textDecoration: 'none' }}

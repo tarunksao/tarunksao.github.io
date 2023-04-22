@@ -12,6 +12,7 @@ export default function About() {
 			>
 				<Box>
 					<Text
+						id='user-detail-intro'
 						fontSize={{ base: '14px', md: '16px', lg: '20px' }}
 						mt={{ base: '10px', md: '25px', lg: '40px' }}
 						w={{ base: '250px', md: '350px', lg: '500px' }}

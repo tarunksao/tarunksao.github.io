@@ -3,7 +3,7 @@ import { Flex, Tag } from '@chakra-ui/react';
 export const TechStackTags = (arr) => {
 	return (
 		<>
-			<Flex gap={2} mt={4} flexWrap='wrap'>
+			<Flex class="project-tech-stack" gap={2} mt={4} flexWrap='wrap'>
 				{arr.arr.map((el) => (
 					<Tag
 						key={el}

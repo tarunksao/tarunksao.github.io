@@ -20,14 +20,14 @@ export default function GitHubStats() {
 				justifyContent='space-evenly'
 				flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
 			>
-				<Box m='auto' mt={10}>
+				<Box id="github-stats-card" m='auto' mt={10}>
 					<Image
 						src='https://github-readme-stats.vercel.app/api?username=tarunksao&show_icons=true&locale=en'
 						alt='tarunksao'
 					/>
 				</Box>
 
-				<Box m='auto' mt={10}>
+				<Box id="github-streak-stats" m='auto' mt={10}>
 					<Image
 						src='https://github-readme-streak-stats.herokuapp.com/?user=tarunksao&'
 						alt='tarunksao'
