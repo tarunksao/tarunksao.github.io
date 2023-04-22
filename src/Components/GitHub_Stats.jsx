@@ -3,7 +3,7 @@ import GitHubCalendar from 'react-github-calendar';
 
 export default function GitHubStats() {
 	return (
-		<Container maxW={'7xl'} p={10} id='GitHub Stats'>
+		<Container maxW={'7xl'} p={10} id='github'>
 			<Heading fontSize='30px' mb={10} color={'blue.500'}>
 				GitHub Calendar
 			</Heading>

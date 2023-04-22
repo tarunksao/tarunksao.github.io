@@ -21,7 +21,14 @@ import {
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon, ChevronDownIcon } from '@chakra-ui/icons';
 import { Link } from 'react-scroll';
 
-const links = ['About Me', 'Skills', 'Experience', 'Projects', 'GitHub Stats', 'Contact Me'];
+const links = [
+	{name:'About Me', code:'about', className:'nav-link about'}, 
+	{name:'Skills', code:'skills', className:'nav-link skills'}, 
+	{name:'Experience', code:'experience', className:'nav-link experience'}, 
+	{name:'Projects', code:'projects', className:'nav-link projects'}, 
+	{name:'GitHub Stats', code:'github', className:'nav-link github'}, 
+	{name:'Contact Me', code:'contact', className:'nav-link contact'}
+];
 
 export default function Nav() {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -50,6 +57,7 @@ export default function Nav() {
 				pos='fixed'
 				w={'full'}
 				zIndex='100'
+				id='nav-menu'
 			>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
@@ -61,7 +69,8 @@ export default function Nav() {
 					/>
 					<HStack spacing={8} alignItems={'center'}>
 						<Link
-							to='Home'
+							className='nav-link home'
+							to='home'
 							spy={true}
 							smooth={true}
 							offset={-100}
@@ -79,15 +88,16 @@ export default function Nav() {
 						>
 							{links.map((link) => (
 								<Link
-									key={link}
-									to={`${link}`}
+									key={link.code}
+									to={`${link.code}`}
+									className={`${link.className}`}
 									spy={true}
 									smooth={true}
 									offset={-100}
 									duration={500}
 								>
 									<Text cursor='pointer' fontWeight='semibold'>
-										{link}
+										{link.name}
 									</Text>
 								</Link>
 							))}
@@ -99,6 +109,7 @@ export default function Nav() {
 								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							</Button>
 						<Link
+							className='nav-link resume'
 							_hover={{ textDecoration: 'none' }}
 							target='_blank'
 							href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'
@@ -132,6 +143,7 @@ export default function Nav() {
 								<MenuList>
 									<MenuItem>
 										<RefLink
+											className='nav-link home'
 											_hover={{ textDecoration: 'none' }}
 											target='_blank'
 											href='https://drive.google.com/file/d/1FWONF3UHX3-f3Gd7DGkLCDQYl8k3aFhW/view?usp=sharing'

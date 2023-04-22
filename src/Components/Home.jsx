@@ -31,7 +31,7 @@ export default function Home() {
 			maxW={'full'}
 			mx={3}
 			pt={24}
-			id='Home'
+			id='home'
 		>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}

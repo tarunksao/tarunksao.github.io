@@ -8,7 +8,7 @@ export default function Projects() {
 			<Container
 				maxW={'7xl'}
 				py={10}
-				id='Projects'
+				id='projects'
 				mb={10}
 				maxH='auto'
 			>

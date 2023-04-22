@@ -12,7 +12,7 @@ export const ProjectData = [
 	{
 		id: 2,
 		name: 'SSENSE Clone',
-		desc: 'A multi-brand retailer based in Montreal, Canada, specializes in the sale of designer fashion and high end streetwear.',
+		desc: 'A multi-brand retailer based in Montreal, Canada, specializes in the sale of designer fashion and high-end streetwear.',
 		netlify: 'https://ssense-clone-app.netlify.app/',
 		github: 'https://github.com/tarunksao/dandy-religion-8340',
 		techStack: ['ReactJS', 'REST-API', 'Chakra-UI', 'Axios', 'Routing'],

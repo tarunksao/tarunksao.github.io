@@ -2,7 +2,7 @@ import { Box, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 export default function About() {
 	return (
-		<Container maxW={'7xl'} p={10} id='About Me'>
+		<Container maxW={'7xl'} p={10} id='about'>
 			<Heading color={'blue.500'}>About Me</Heading>
 			<Flex
 				direction={{ base: 'column-reverse', md: 'row' }}

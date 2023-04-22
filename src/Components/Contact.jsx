@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 export default function Contact() {
 	return (
 		<>
-			<Container maxW={'7xl'} p={10} id='Contact Me'>
+			<Container maxW={'7xl'} p={10} id='contact'>
 				<Heading color={'blue.500'}>Contact Me</Heading>
 				<Flex
 					gap={10}

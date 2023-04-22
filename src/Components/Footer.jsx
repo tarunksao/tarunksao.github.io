@@ -1,5 +1,5 @@
 import { ChevronUpIcon } from "@chakra-ui/icons";
-import { Button, Container, Flex, Text } from "@chakra-ui/react";
+import { Button, Container, Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 
 export default function Footer() {
